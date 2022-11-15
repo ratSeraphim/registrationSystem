@@ -161,3 +161,45 @@ header nav a:hover{
         background-position-x: -250rem;
     }
 }
+
+#sakums .cloud2{
+    opacity: .5;
+    height: 15rem;
+    animation-duration: 15s;
+    animation-direction: reverse;
+}
+
+#specialitates .box-container{
+    display: grid;
+   /* grid-template-columns: 33% 33% 33%; */
+   /* grid-template-columns: auto auto auto; */
+   /* grid-template-columns: repeat(3, 1fr); */
+   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr)); /* elements have to be 40rem wide, if possible will fit into 1 fraction */
+   gap: 1.5rem;
+}
+
+#specialitates .box{
+    text-align: center;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: 4rem 2rem;
+}
+
+#specialitates .box img{
+    height: 30rem;
+    width: 100%;
+}
+
+#specialitates .box h3{
+    color: var(--black);
+    font-size: 2.5rem;
+    padding-top: 1.5rem;
+}
+
+#specialitates .box p{
+    color: var(--light-color);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
