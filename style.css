@@ -75,7 +75,8 @@ span{
     color: #fff;
     background: var(--main-color);
     border-radius: .5rem;
-    box-shadow: var(--box-shadow)
+    box-shadow: var(--box-shadow);
+    border: none;
 }
 
 .btn:hover{
@@ -251,7 +252,7 @@ header nav a:hover{
     text-align: center;
 }
 
-#informacija .icons i{
+.icons i{
     border-radius: 50%;
     background: var(--bg);
     color: var(--main-color);
@@ -339,4 +340,104 @@ header nav a:hover{
     border: var(--border);
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
+}
+
+
+#kontakti h3{
+    color: var(--black);
+    padding: 1rem 0;
+    font-size: 2.7rem;
+}
+
+#kontakti p{
+    color: var(--light-color);
+    line-height: 1.8;
+    font-size: 1.7rem;
+}
+
+#kontakti .row{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+#kontakti .map, #kontakti form{
+    flex: 1 1 45rem;
+    padding: 2rem;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+
+#kontakti form .box{
+    margin: .7rem 0;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    border-radius: .5rem;
+    border: var(--border);
+    background: #f7f7f7;
+    width: 100%;
+}
+
+#kontakti form .box:focus{
+    background: var(--bg);
+}
+
+#kontakti form textarea{
+    height: 14rem;
+}
+
+footer{
+    background: var(--bg);
+    color: var(--black);
+    text-align: center; 
+    padding: 4rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+#menu-btn{
+    cursor: pointer;
+    font-size: 2.5rem;
+    background: var(--bg);
+    color: var(--main-color);
+    padding: 1rem 1.3rem;
+    border-radius: .5rem;
+    display: none;
+}
+
+#menu-btn:hover{
+    color: #fff;
+    background: var(--main-color);
+}
+
+@media (max-width: 1143px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 966px){
+    header, section{
+        padding: 2rem 6%;
+    }
+
+    #menu-btn{
+        display: block;
+    }
+    header nav{
+        position: absolute;
+        top: 115%;
+        right: 2rem;
+        background: #fff;
+        box-shadow: var(--box-shadow);
+        border: var(--border);
+        border-radius: .5rem;
+        width: 30rem;
+        transform: scale(0);
+        transform-origin: top right;
+        opacity: 0;
+    }
 }
