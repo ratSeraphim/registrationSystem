@@ -169,7 +169,7 @@ header nav a:hover{
     animation-direction: reverse;
 }
 
-#specialitates .box-container{
+#specialitates .box-container, #iepazisti .box-container{
     display: grid;
    /* grid-template-columns: 33% 33% 33%; */
    /* grid-template-columns: auto auto auto; */
@@ -202,4 +202,141 @@ header nav a:hover{
     font-size: 1.5rem;
     padding: 1rem 0;
     line-height: 1.8;
+}
+
+#informacija .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem
+}
+
+#informacija .row .image{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+#informacija .row .image img{
+    width: 100%;
+}
+
+#informacija .row .content{
+    flex: 1 1 45rem;
+}
+
+#informacija h3{
+    font-size: 3rem;
+    color: var(--black);
+}
+
+#informacija p{
+    font-size: 1.5rem;
+    color: var(--light-color);
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+#informacija .icons-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 2rem
+}
+
+#informacija .icons{
+    flex: 1 1 15rem;
+    border-radius: .5rem;
+    border: var(--border);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+#informacija .icons i{
+    border-radius: 50%;
+    background: var(--bg);
+    color: var(--main-color);
+    height: 5rem;
+    width: 5rem;
+    font-size: 2rem;
+    line-height: 5rem;
+}
+
+#informacija h5{
+    color: var(--light-color);
+    font-size: 1.6rem;
+    padding-top: 1rem;
+}
+
+#iepazisti .box{
+    height: 30rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--box-shadow);
+}
+
+#iepazisti .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#iepazisti .box .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 6rem;
+    left: 0;
+    transition-delay: .3s;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+#iepazisti .box:hover .content{
+    top: 0;
+    opacity: 1;
+}
+
+#iepazisti .box h5{
+    font-size: 2.5rem;
+    padding-bottom: 0.5rem;
+    color: var(--black)
+}
+
+#iepazisti .box p{
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
+#iepazisti .box::before{
+    height: 100%;
+    width: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255, .8);
+    clip-path: circle(0% at 50% 0);
+    transition: .5s linear;
+}
+
+#iepazisti .box:hover::before{
+    clip-path: circle(100%);
+}
+
+#kontakti .icons-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));   
+    gap: 1.5rem;
+}
+
+#kontakti .icons{
+    padding: 2.5rem;
+    text-align: center;
+    border: var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
 }
